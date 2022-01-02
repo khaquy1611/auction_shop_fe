@@ -1,0 +1,291 @@
+@import ../../styles/helpers
+
+.container
+  max-width: 896px
+
+.ProfileEditContaiNer
+  display: flex
+  justify-content: space-between
+  margin-bottom: 20
+
+.top
+  margin-bottom: 30px
+  +m
+    margin-bottom: 32px
+    padding-bottom: 16px
+    border-bottom: 1px solid $neutrals6
+
+.title
+  margin-bottom: 16px
+
+.info
+  color: $neutrals4
+  font-weight: 500
+
+  strong
+    color: $neutrals2
+
+.row
+  display: flex
+  margin: 0 -16px
+  justify-content: space-around
+  +d
+    
+
+.col
+  flex: 0 0 calc(50% - 32px)
+  width: calc(50% - 32px)
+  margin: 0 16px
+
+  +d
+    width: 100%
+    margin: 0
+
+  &:not(:last-child)
+    +d
+      margin-bottom: 64px
+    +m
+      margin-bottom: 32px
+      padding-bottom: 32px
+      border-bottom: 1px solid $neutrals6
+
+.user
+  display: flex
+  background-color: #FFFFFF
+  padding: 20px
+  box-shadow: 0px 1px 4px rgba(15, 15, 15, 0.1)
+  border-radius: 10px
+
+.avatar
+  flex-shrink: 0
+  width: 128px
+  height: 128px
+  margin-right: 32px
+  +m
+    width: 64px
+    height: 64px
+    margin-right: 16px
+
+  img
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    object-fit: cover
+
+.details
+  flex-grow: 1
+
+.stage
+  margin-bottom: 8px
+  color: $neutrals2
+  +body-bold-2
+
+.text
+  margin-bottom: 16px
+  +caption-2
+  color: $neutrals4
+  font-weight: normal
+
+.file
+  display: inline-block
+  position: relative
+  overflow: hidden
+
+  .button-stroke
+    background: $orange-light
+
+.load
+  position: absolute
+  top: 0
+  left: 0
+  font-size: 140px
+  opacity: 0
+
+.list
+  margin-bottom: 40px
+  background-color: #FFFFFF
+  padding: 20px
+  box-shadow: 0px 1px 4px rgba(15, 15, 15, 0.1)
+  border-radius: 10px
+  +d
+    display: flex
+    margin: 0 -20px 64px
+  +m
+    display: block
+    margin: 0 0 32px
+
+  .addSocial
+    color: $neutrals4
+    margin-top: 32px
+    svg
+      fill: $neutrals4
+
+.item
+  +d
+    margin: 0 20px
+    width: 100%
+  +m
+    width: 100%
+    margin: 0
+
+  & > .button
+    margin-top: 32px
+
+  &:not(:last-child)
+    margin-bottom: 40px
+    +d
+      margin-bottom: 0
+    +m
+      margin-bottom: 32px
+
+.category
+  margin-bottom: 32px
+  +body-bold-2
+  display: flex
+  justify-content: space-between
+
+.categoryCopyInfo
+
+.styleCheck
+  margin-left: 6px
+  
+.fielD
+  Width: 100%
+
+.styleCheck
+    position: absolute
+    top: -44px
+    font-size: 14px
+    cursor: default
+    box-shadow: 0px 16px 64px -16px #1f2f4666
+    background: #07044B
+    color: #FCFCFD
+    font-weight: 500
+    display: none
+    justify-content: center
+    left: -60px
+    border-radius: 8px
+    align-items: center
+    width: 150px
+    height: 40px
+
+
+.categoryCopyInfoBtn
+  position: relative
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  height: 48px
+  padding: 0 10px
+  background: #ee4e00
+  border-radius: 0 10px 10px 0
+  font-family: 'Roboto', sans-serif
+  font-weight: 600
+  font-size: 14px
+  line-height: 1.14286
+  font-weight: 600
+  text-align: center
+  color: #FCFCFD
+  transition: all .2s
+  margin-top: 23px
+
+  &:hover
+    .styleCheck
+      display: flex
+
+.fieldset
+  width: 100% 
+  & > .field
+    &:not(:last-child)
+      margin-bottom: 32px
+
+    .label
+      margin-bottom: 12px
+      color: $neutrals5
+      text-transform: uppercase
+      font-size: 12px
+
+    input, textarea
+      font-weight: 600
+      color: $neutrals2
+
+      &::placeholder
+        color: $neutrals4
+        font-weight: 600
+
+.box
+  position: relative
+  margin-top: 30px
+
+  .button
+    position: absolute
+    right: 12px
+    bottom: 8px
+    height: 32px
+    padding: 0 10px
+
+.note
+  margin-top: 20px
+  color: $neutrals4
+  font-weight: normal
+
+.field
+  width: 100%
+
+.btns
+  display: flex
+  +m
+    display: block
+    text-align: center
+
+  .button
+    +m
+      width: 100%
+
+    &:not(:last-child)
+      margin-right: 32px
+      +m
+        margin: 0 0 32px
+
+.linkProfilE
+  display: flex
+  padding-bottom: 20px;
+
+.clear
+  margin-right: 20px
+  display: inline-flex
+  align-items: center
+  +button-1
+  color: $neutrals4
+  transition: color .2s
+
+  svg
+    margin-right: 8px
+    fill: $neutrals4
+    transition: fill .2s
+
+  &:hover
+    color: $orange-light
+
+    svg
+      fill: $orange-light
+
+@media (max-width: 767px)
+  .col
+    width: 100%
+  .user
+    width: 100%
+  .row
+    display: block
+    margin: 0
+  .ProfileEditContaiNer
+    flex-direction: column
+  .btns
+    display: flex
+    flex-direction: row-reverse
+    padding-bottom: 16px
+    padding-top: 6px
+  .clear
+    width: 100%
+    display: flex
+    justify-content: center

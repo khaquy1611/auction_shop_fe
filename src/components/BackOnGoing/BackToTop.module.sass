@@ -1,0 +1,62 @@
+@import ../../styles/helpers
+
+.backToTop
+  position: fixed
+  top: 50%
+  right: 1%
+  transform: translateY(-50%)
+  animation: fadeIn 700ms ease-in-out 1s both
+  cursor: pointer
+  z-index: 999
+  width: 48px
+  height: 48px
+  +d
+    right: 1.5%
+
+  &:hover 
+    .backToTop2
+      display: block
+
+
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+.backToTop2 
+  display: none
+  position: absolute
+  top: 0
+  right: 90%
+.ImgGif
+  width: 56px
+  padding: 9px
+  border-radius: 50%
+  background: #FFFFFF
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08)
+.backToTop2
+  font-size: 22px
+  font-weight: 700
+  line-height: 16px
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08)
+  padding-top: 20px
+  padding-bottom: 18px
+  background: #FFFFFF
+  margin-left: 16px
+  margin-top: 1px
+  padding-right: 6px
+  padding-left: 14px
+  border-top-left-radius: 25px
+  border-bottom-left-radius: 25px
+  color: #777E90
+  &:hover
+    color: #EE4E00
+  &::before 
+    content: ""
+    border: 27px solid #ccc
+    border-color: white transparent white transparent
+    right: -29px
+    position: absolute
+    top: 0
+
+    

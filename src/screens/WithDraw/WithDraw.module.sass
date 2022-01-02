@@ -1,0 +1,199 @@
+@import ../../styles/helpers
+
+.head
+  margin-bottom: 30px
+  padding-bottom: 20px
+  border-bottom: 2px solid $neutrals6
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  .breadcrumb ul
+    display: flex
+    align-items: center
+
+    li
+      display: flex
+      align-items: center
+      font-size: 14px
+
+      .button
+        color: $neutrals2
+
+      svg
+        transform: rotate(-90deg)
+
+      > *
+        margin: 0 15px
+
+      &:first-child
+        color: $neutrals4
+
+      &:last-child
+        .button
+          margin-right: 0
+
+  +m
+    margin-bottom: 0px
+    padding-bottom: 24px
+
+.body
+  display: flex
+  justify-content: center
+
+.btns
+  display: flex
+  +m
+    display: block
+
+  .button
+    width: 100%
+
+    &:not(:last-child)
+      margin: 0 8px 8px
+      +m
+        margin: 0 0 8px
+
+.content
+  padding-top: 35px
+  width: 100%
+  max-width: 500px
+  +m
+    margin-left: 0
+
+.field
+  margin-bottom: 32px
+
+  &.last
+    margin-bottom: 12px
+
+  .label
+    display: flex
+    justify-content: space-between
+    color: $neutrals5
+    text-transform: uppercase
+    font-size: 12px
+    margin-bottom: 10px
+
+    a
+      color: $neutrals5
+
+      span
+        margin-right: 10px
+
+  input, 
+  .bgInput p
+    border: 2px solid $neutrals6
+    box-sizing: border-box
+    border-radius: 12px
+    color: $neutrals2
+    font-size: 12px
+    height: 48px
+    width: 100%
+    padding-left: 16px
+    font-weight: 600
+
+  .bgInput p
+    background-repeat: no-repeat
+    background-size: 26px
+    background-position: 16px center
+    padding-left: 60px
+    line-height: 48px
+    display: flex
+    align-items: center
+    color: $neutrals4
+
+    .orangeText
+      margin-left: 5px
+
+.btns
+  margin: 30px 0
+
+.textErorI
+  font-size: 12
+  color: red
+  marginTop: 5px
+  font-weight: 200
+
+.textNetwork
+  display: flex
+  justify-content: space-between
+  color: #B1B5C3
+  text-transform: uppercase
+  font-size: 12px
+  margin-bottom: 10px
+
+.TipWithraw
+  border-radius: 10px
+  color: #45B26B
+  background-color: rgba(69, 178, 107, 0.04)
+
+.TipWithrawTitle
+  font-size: 20px
+  font-weight: 500
+
+.TipWithrawTitleText
+  font-size: 14px
+  font-weight: 500
+
+.TipWithrawContainer
+  padding: 14px 20px
+
+.walletImageText
+  font-weight: 500
+  color: #353945
+  max-width: 500px
+  overflow: hidden
+  -webkit-box-orient: vertical
+  text-overflow: ellipsis
+  line-height: 20px!important
+  -webkit-line-clamp: 1
+  display: -webkit-box
+
+.warning
+  padding: 24px
+  background: rgba(239, 70, 111, 0.08)
+  color: rgba(239, 70, 111, 1)
+  border-radius: 8px
+  font-weight: normal
+  font-size: 12px
+  display: flex
+  align-items: center
+
+  img
+    margin-right: 15px
+
+  span
+    display: block
+
+.note
+  color: $neutrals5
+  font-weight: normal
+  font-size: 12px
+  line-height: 16px
+  margin-bottom: 12px
+
+
+.inputMax 
+  display: flex
+  border: 2px solid $neutrals6
+  box-sizing: border-box
+  border-radius: 12px
+  color: $neutrals2
+  font-size: 12px
+  height: 48px
+  width: 100%
+  font-weight: 600
+
+.inputMAX
+  display: none
+
+
+  .inputInside 
+    height: 44px
+    border: none
+
+.inputMaxBtn
+  padding-right: 16px
+  color: #ee4e00
+  cursor: pointer

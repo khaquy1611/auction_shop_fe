@@ -1,0 +1,293 @@
+@import ../../styles/helpers
+
+.head
+  margin-bottom: 30px
+  padding-bottom: 20px
+  border-bottom: 2px solid $neutrals6
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  .breadcrumb ul
+    display: flex
+    align-items: center
+
+    li
+      display: flex
+      align-items: center
+      font-size: 14px
+
+      .button
+        color: $neutrals2
+
+      svg
+        transform: rotate(-90deg)
+
+      > *
+        margin: 0 15px
+
+      &:first-child
+        color: $neutrals4
+
+      &:last-child
+        .button
+          margin-right: 0
+
+
+  +m
+    margin-bottom: 0px
+    padding-bottom: 24px
+
+.body
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  border-radius: 10px
+  margin: 0 auto
+  padding: 20px 16px
+  +m
+    display: block
+
+.title
+  margin-bottom: 8px
+  +m
+    text-align: center
+    font-size: 32px
+
+.text
+  margin-bottom: 24px
+  +caption-2
+  color: $neutrals4
+  +m
+    text-align: center
+
+  span
+    font-weight: 600
+    color: $neutrals2
+
+.field
+  margin-top: 16px
+  margin-bottom: 32px
+
+  &.last
+    margin-bottom: 12px
+
+  .label
+    display: flex
+    justify-content: space-between
+    color: $neutrals5
+    text-transform: uppercase
+    font-size: 12px
+    margin-bottom: 10px
+
+    a
+      color: $neutrals5
+
+      span
+        margin-right: 10px
+
+  input, .bgInput p
+    border: 2px solid $neutrals6
+    box-sizing: border-box
+    border-radius: 12px
+    color: $neutrals2
+    font-size: 12px
+    height: 48px
+    width: 100%
+    padding: 16px
+    font-weight: 600
+
+  .bgInput p
+    background-repeat: no-repeat
+    background-size: 26px
+    background-position: 16px center
+    padding-left: 60px
+    line-height: 48px
+    display: flex
+    align-items: center
+    color: $neutrals4
+
+    .orangeText
+      margin-left: 5px
+
+.section
+  margin-bottom: 80px
+  +m
+    margin-bottom: 50px
+
+  &:last-child
+    margin-bottom: 0
+
+  &.securitySection
+    .subtitle
+      margin-top: 16px
+      padding-top: 16px
+      border-top: 1px solid $neutrals6
+      display: block
+      font-weight: 600
+      font-size: 24px
+      line-height: 32px
+      +m
+        font-size: 18px
+        line-height: 24px
+
+    .content
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+
+    .box
+      width: calc((100% - 48px) / 3)
+      +m
+        width: 100%
+        margin-bottom: 30px
+
+    .field
+      margin-bottom: 16px
+
+    .btns
+      margin-top: 0
+      padding: 0
+      border-top: none
+
+    .step
+      font-size: 16px
+      line-height: 16px
+      color: $neutrals4
+      font-weight: normal
+      padding-bottom: 34px
+      border-bottom: 1px solid $neutrals6
+      margin-bottom: 24px
+
+    .stepContent
+      .subTitleStep
+        font-weight: 600
+        font-size: 16px
+        line-height: 24px
+        color: $neutrals2
+        display: block
+        margin-bottom: 16px
+
+      span, p
+        color: $neutrals4
+        font-size: 12px
+        font-weight: 500
+        line-height: 16px
+        display: block
+
+      p
+        display: flex
+        align-items: center
+        font-weight: 600
+
+        .orangeText
+          font-weight: 600
+
+    .qr
+      margin: 16px 0
+
+      .orangeText
+        font-weight: 500
+        font-size: 12px
+        line-height: 16px
+
+  &.history
+    .headTitle
+      border-bottom: 1px solid $neutrals6
+
+    .tableHistory
+      box-shadow: 0px 1px 4px rgba(15, 15, 15, 0.1)
+      margin-bottom: 56px
+
+    .tableTitle
+      label, span
+        display: block
+        padding: 16px 24px
+
+      label
+        font-size: 16px
+        line-height: 24px
+        color: $neutrals2
+        border-bottom: 1px solid $neutrals6
+
+      span
+        font-weight: normal
+        font-size: 12px
+        line-height: 16px
+
+    .tableContent
+      border-top: 1px solid $neutrals6
+      overflow: auto
+
+      tr
+        border-bottom: 1px solid $neutrals6
+
+      th, td
+        padding: 16px 24px
+        text-align: left
+        font-weight: normal
+        color: $neutrals4
+
+      td
+        color: $neutrals2
+
+      .pic
+        cursor: pointer
+
+  .headTitle
+    margin-bottom: 55px
+
+  .browser
+    font-weight: 500
+    color: #353945
+    width: 180px
+    overflow: hidden
+    -webkit-box-orient: vertical
+    text-overflow: ellipsis
+    line-height: 25px
+    -webkit-line-clamp: 1
+    height: 40px
+    display: -webkit-box
+
+  h2
+    font-weight: bold
+    font-size: 48px
+    line-height: 56px
+    margin-bottom: 16px
+    +m
+      font-size: 24px
+      line-height: 32px
+
+  .notes
+    color: $neutrals4
+    font-size: 14px
+    line-height: 20px
+    font-weight: normal
+
+  .formSubmit
+    max-width: 600px
+    margin: 0 auto
+
+  .btns
+    padding-top: 40px
+    border-top: 1px solid $neutrals6
+    margin-top: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    button
+      margin-right: 30px
+      font-weight: 600
+      display: flex
+      align-items: center
+
+      &.grayButton
+        color: $neutrals4
+
+    svg
+      margin-right: 10px
+      fill: $neutrals4
+
+.orangeText
+  color: $orange-dark !important

@@ -1,0 +1,81 @@
+@import ../../../styles/helpers
+
+.title
+  font-size: 24px
+  line-height: 32px
+  color: $neutrals2
+  text-align: center
+  margin-bottom: 36px
+
+.button
+  width: 100%
+
+  &:not(:last-child)
+    margin-bottom: 8px
+
+.note
+  color: $neutrals4
+  font-weight: normal
+  font-size: 14px
+  line-height: 16px
+  margin-bottom: 32px
+  padding: 18px 0
+  border-top: 1px solid $neutrals6
+  border-bottom: 1px solid $neutrals6
+  display: block
+  text-align: center
+
+.field
+  margin-bottom: 32px
+
+  &.dateField
+    margin-bottom: 6px
+
+  .label
+    margin-bottom: 12px
+    font-size: 12px
+    line-height: 12px
+    color: $neutrals5
+
+.groupField
+  display: flex
+  justify-content: space-between
+  +m
+    flex-direction: column
+
+  .field
+    width: calc(50% - 8px)
+    +m
+      width: 100%
+
+.hidenAction
+  font-weight: normal
+  font-size: 12px
+  line-height: 16px
+  color: $neutrals5
+
+.actions
+  margin-top: 32px
+  display: flex
+  justify-content: space-between
+  +m
+    flex-direction: column
+
+  .button
+    width: calc(50% - 16px)
+    padding: 0 20px
+    margin-bottom: 16px
+    +m
+      width: 100%
+
+.input
+  width: 100%
+  height: 48px
+  padding: 0 14px
+  border-radius: 12px
+  border: 2px solid #E6E8EC
+  background: none
+  font-weight: 600
+  font-size: 14px
+  color: #23262F
+  transition: border-color .2s

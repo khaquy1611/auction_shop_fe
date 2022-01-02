@@ -1,0 +1,198 @@
+@import ../../styles/helpers
+
+.TitleContainer
+
+.info
+  margin-bottom: 32px
+  font-weight: 500
+  +body-2
+
+.row
+  display: flex
+  padding-top: 12px
+
+  &:first-child
+    padding: 0 0 12px
+    border-bottom: 1px solid $neutrals6
+    font-weight: 500
+
+.col
+  +body-2
+
+  &:first-child
+    color: $neutrals4
+    font-weight: normal
+
+  &:nth-child(2)
+    margin-left: auto
+    padding-left: 16px
+    font-weight: 600
+.buttonListing
+  width: 100%
+
+.NameListing
+  color: #23262F
+  font-weight: 500
+  padding-top: 10px
+
+.TitleListing
+  color: #777E90
+  font-size: 18px 
+  font-weight: 400
+  padding-top: 10px
+
+.btnsH
+  margin-top: 32px
+  width: 100%
+.btns
+  margin-top: 32px
+  display: flex
+  justify-content: space-between
+
+.button
+  width: 49%
+
+  &:not(:last-child)
+    margin-bottom: 8px
+.disabled
+  background-color: #cc6a00
+  cursor: default
+
+.col
+  background-color: #fcfcfd
+
+.TitleImgContainer
+  padding-top: 20px
+  display: flex
+  justify-content: space-between
+.TitleImg
+  width: 160px
+  height: 120px
+.TitleImgTitle
+  color: #23262F
+  font-weight: 400
+  font-size: 22px
+  line-height: 24px
+.TitleImgDes
+  padding-top: 20px
+  font-size: 12px
+  line-height: 16px
+  font-weight: 400
+  color: #777E90
+.ContainerImgTitle
+  width: 260px
+  margin-left: 10px
+.detail
+  padding: 10px 0 0
+  margin-top: 0
+
+  .warning
+    padding: 24px
+    background: rgba(239, 70, 111, 0.08)
+    color: rgba(239, 70, 111, 1)
+    border-radius: 8px
+    margin-bottom: 25px
+    font-weight: normal
+    font-size: 12px
+    display: flex
+    align-items: center
+
+    img
+      margin-right: 15px
+
+    span
+      display: block
+
+  .qr
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .styleQR
+    margin-bottom: 20px
+
+  .field
+    display: flex
+    margin-bottom: 24px
+
+    .input
+      width: 100%
+      height: 48px
+      padding: 0 42px 0 16px
+      background: none
+      border: 1px solid $neutrals6
+      border-radius: 8px 0 0 8px
+      +poppins
+      +caption-2
+      transition: border-color .2s
+      font-weight: normal
+      color: $neutrals2
+      +placeholder
+        color: $neutrals4
+
+      &:focus
+        border-color: $orange-light
+
+    button
+      border: 1px solid $neutrals6
+      background: none
+      color: $neutrals2
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+      border-left: none
+      border-radius: 0 4px 4px 0
+
+  .note
+    span
+      color: $neutrals5
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+
+.TitleContainer
+  display: flex
+  justify-content: space-between
+  width: "90%"
+  align-items: center
+  margin-top: 10px
+
+
+.TitleDetail
+  font-size: 14px
+  font-weight: 600
+.SpnDetail
+  font-size: 14px
+  font-weight: 600
+  margin-top: -3px
+  padding-left: 4px
+.SpnDetailItem
+  display: flex
+
+
+.buttonDisablue
+  background: none
+  color: $neutrals2
+  background-color: rgba(238, 78, 0, 0.15)
+  font-size: 14px
+  line-height: 16px
+  border-radius: 10px
+  font-weight: 700
+
+
+@media  (max-width: 767px)
+  h4
+    font-size: 28px
+  .btns
+    margin-top: 0
+  .TitleContainer
+    display: block!important
+  .TitleImgContainer
+    display: block!important
+    padding-top: 6px
+  .ContainerImgTitle
+    display: flex
+    align-items: center
+  .TitleImgDes
+    padding-top: 0
+    padding-left: 20px

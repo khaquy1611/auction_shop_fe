@@ -1,0 +1,233 @@
+@import ../../../styles/helpers
+
+.section
+  overflow: hidden
+
+.container
+  display: flex
+  +x
+    display: block
+
+.row
+  display: flex
+  flex-grow: 1
+  margin-right: 32px
+  padding-right: 32px
+  border-right: 1px solid $neutrals6
+  +x
+    margin-right: 0
+    padding: 0
+    border: none
+
+.sidebar
+  flex-shrink: 0
+  width: 224px
+  +x
+    width: 100%
+    margin-top: 64px
+  +m
+    margin-top: 40px
+    padding-top: 40px
+    border-top: 1px solid $neutrals6
+
+  .button
+    margin-top: 8px
+    +x
+      display: none
+
+.col
+  &:first-child
+    flex-grow: 1
+    padding-right: 32px
+    +t
+      padding: 0
+
+  &:nth-child(2)
+    flex: 0 0 42.2%
+    +d
+      flex: 0 0 43.5%
+    +t
+      display: none
+
+.preview
+  position: relative
+  border-radius: 12px
+  overflow: hidden
+  @include zoomInAndBlurAnimation()
+
+  img
+    width: 100%
+
+.card,
+.item
+  color: $neutrals2
+
+.card
+  .preview
+    margin-bottom: 24px
+
+  .avatar
+    width: 48px
+    height: 48px
+    margin-right: 16px
+
+  .title
+    +body-bold-1
+    +m
+      font-size: 16px
+
+  .content
+    margin-bottom: 2px
+
+.line,
+.head
+  display: flex
+
+.line
+  align-items: center
+
+.box
+  margin-left: auto
+  padding-left: 20px
+  text-align: right
+
+.avatar
+  flex-shrink: 0
+
+  img
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    object-fit: cover
+
+.description
+  flex-grow: 1
+
+.counter
+  font-weight: 500
+  color: $neutrals3
+
+.content
+  +caption-2
+  color: $neutrals4
+
+.price
+  display: inline-block
+  padding: 7px
+  box-shadow: inset 0 0 0 2px $orange-light
+  border-radius: 4px
+  +hairline-2
+  color: $orange-light
+
+.item
+  display: flex
+  align-items: center
+
+  .preview
+    flex-shrink: 0
+    width: 160px
+    margin-right: 24px
+
+  .avatar
+    width: 24px
+    height: 24px
+    margin-right: 12px
+
+  .title
+    margin-bottom: 8px
+    +body-bold-2
+
+  .line
+    margin-bottom: 16px
+
+  .price
+    margin-right: 12px
+
+  .button
+    padding: 0 12px
+    height: 32px
+
+  &:not(:last-child)
+    margin-bottom: 30px
+
+.info
+  +caption-bold-2
+  color: $purple-dark
+  +x
+    margin-bottom: 24px
+  +t
+    margin-bottom: 20px
+
+.list
+  +x
+    display: flex
+    margin: 0 -12px
+  +t
+    margin: 0 -40px
+    padding-top: 4px
+    overflow: auto
+    overflow-x: auto
+    -ms-overflow-style: none
+    scrollbar-width: none
+    -webkit-overflow-scrolling: touch
+    &::-webkit-scrollbar
+      display: none
+    &:before,
+    &:after
+      content: ""
+      flex-shrink: 0
+      width: 40px
+      height: 1px
+
+.user
+  display: flex
+  align-items: center
+  padding: 24px 0
+  +x
+    flex: 0 0 calc(25% - 24px)
+    width: calc(25% - 24px)
+    margin: 0 12px
+    padding: 0
+  +t
+    flex: 0 0 224px
+    width: 224px
+    margin: 0
+    padding-right: 16px
+
+  .avatar
+    position: relative
+    width: 56px
+    height: 56px
+    margin-right: 16px
+
+  &:not(:last-child)
+    border-bottom: 1px solid $neutrals6
+    +x
+      border: none
+
+.number
+  position: absolute
+  top: -4px
+  left: -4px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 24px
+  height: 24px
+  border-radius: 50%
+  border: 2px solid $neutrals8
+  background: $neutrals2
+  +caption-bold-2
+  color: $neutrals8
+
+.name
+  margin-bottom: 2px
+  font-weight: 500
+
+.money
+  +caption-2
+  color: $purple-light
+
+  span
+    font-weight: 600
+    color: $purple-light

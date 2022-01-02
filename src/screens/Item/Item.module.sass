@@ -1,0 +1,396 @@
+@import ../../styles/helpers
+.search
+  top: 12%
+  left: 12%
+  cursor: pointer
+
+.card
+  position: relative
+.plus
+  background-color: #fff
+  position: absolute
+  width: 32px
+  height: 32px
+  padding: 2px
+  right: 2%
+  border-radius: 50%
+  top: 2%
+  box-shadow: 0px 8px 16px rgba(0 , 0 , 0 , .3)
+ 
+.section
+  padding: 96px 0 0
+  +x
+    padding: 80px 0 0
+  +m
+    padding: 64px 0 0
+
+.container
+  display: flex
+  align-items: flex-start
+
+.containerWrap
+  display: grid
+  grid-template-columns: 50% 45%
+  grid-gap: 0 5%
+  +m
+    display: block
+
+.OnHistoryBid
+  cursor: pointer
+
+.bg
+  position: relative
+  flex-grow: 1
+  margin-right: 55px
+  +x
+    margin-right: 64px
+  +d
+    margin-right: 32px
+  +t
+    margin: 0 0 32px
+
+.btnShow
+  display: block
+  margin-top: 30px 
+  margin-bottom: 30px 
+  width: 100%
+  max-width: 337px
+
+.numberItem
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  width: 88px
+  height: 88px
+  position: absolute
+  bottom: 15px
+  right: 15px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  span
+    color: #3772FF
+
+.details
+  display: flex
+  flex-direction: column
+  flex-shrink: 0
+  width: 430px
+  +d
+    width: 336px
+  +t
+    width: 100%
+
+  .link.btnShowMore
+    margin: 15px 0 30px
+    color: $neutrals2
+
+  .label
+    font-size: 24px
+    margin-bottom: 15px
+
+.preview
+  position: relative
+  order: 1
+  // @include flashAnimation()
+
+  // img
+  //   width: 100%
+  //   height: 435px
+  //   border-radius: 16px
+
+.categories
+  position: absolute
+  top: 24px
+  left: 24px
+  display: flex
+  flex-wrap: wrap
+  margin: -8px 0 0 -8px
+  z-index: 2
+
+.category
+  margin: 8px 0 0 8px
+  background: $white
+  padding: 2px 5px
+  border-radius: 4px
+  color: $orange-dark
+  font-size: 12px
+  text-transform: uppercase
+
+.title
+  margin-bottom: 8px
+
+.cost
+  display: flex
+  align-items: center
+  margin-bottom: 40px
+
+.price
+  +dm-sans
+  font-size: 16px
+  line-height: 30px
+
+  &:not(:last-child)
+    margin-right: 8px
+
+.item
+  border-bottom: 1px solid #E6E8EC
+
+
+.counter
+  +button-1
+  color: $neutrals4
+
+.info
+  margin-bottom: 10px
+  max-height: 260px
+  overflow: hidden
+  font-size: 16px
+  color: $neutrals4
+  font-weight: normal
+
+  &.showMore
+    max-height: initial
+    overflow: initial
+    transition: ease-out all 500ms
+
+  a
+    text-decoration: underline
+    font-weight: 500
+    color: $neutrals2
+
+    &:hover
+      text-decoration: none
+
+.nav
+  display: flex
+  margin-bottom: 32px
+  padding: 6px
+  border-radius: 20px
+  box-shadow: inset 0 0 0 2px $neutrals6
+
+  &:hover
+    box-shadow: inset 0 0 0 2px $orange-light
+
+.link
+  padding: 6px 12px
+  border-radius: 14px
+  background: none
+  +button-2
+  color: $neutrals2
+  transition: all .2s
+
+  &:hover
+    color: $orange-light
+
+  &.active
+    background: $orange-light
+    color: $neutrals8
+
+  &:not(:last-child)
+    margin-right: 8px
+
+.users
+  margin-bottom: auto
+  display: flex
+  align-items: flex-start
+
+  .label
+    font-size: 24px
+    margin-right: 30px
+
+.timeDes
+  width: 200px
+
+.endTime  
+  color: #EE4E00!important
+
+.time
+  padding-top: 20px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-bottom: 40px
+
+  img
+    width: 20px
+    height: 20px
+    margin-right: 10px
+    font-weight: 600
+
+  div
+    color: $neutrals5
+    font-weight: normal
+
+    span
+      color: $neutrals3
+      font-weight: 700
+
+.avatar
+  position: relative
+  flex-shrink: 0
+  width: 48px
+  height: 48px
+  margin-right: 16px
+
+  & > img
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    object-fit: cover
+
+.reward
+  position: absolute
+  right: -5px
+  bottom: -5px
+
+  img
+    max-width: 25px
+
+.details
+  flex-grow: 1
+  margin-right: 15px
+
+.position
+  color: $neutrals4
+
+.name
+  font-weight: 500
+
+.list
+  display: flex
+  flex-wrap: wrap
+  align-items: flex-start
+  margin-bottom: 20px
+
+  .item
+    display: flex
+    align-items: center
+    width: calc(100% / 3)
+    padding: 0 15px 16px 0
+    +t
+      width: 50%
+
+.listUser
+  .item
+    display: flex
+    align-items: center
+    position: relative
+    padding-bottom: 10px
+    padding-top: 10px
+
+    &:not(:first-child)
+      border-top: 1px solid $neutrals6
+
+  .name, .position
+    display: flex
+    justify-content: space-between
+
+  .action
+    position: absolute
+    right: 0
+    top: calc(50% + 8px)
+    transform: translateY(-50%)
+
+    img
+      width: 25px
+      cursor: pointer
+
+  .userInfor
+    width: 100%
+    
+
+
+    strong
+      margin-right: 3px
+
+.collections
+  background: $neutrals7
+  padding-bottom: 60px
+
+  .container
+    flex-direction: column
+
+  .creator
+    margin-top: 60px
+    width: 100%
+
+    .creatorName
+      font-size: 24px
+      color: $neutrals2
+      padding: 15px 0
+      width: 100%
+
+  .creatorContent
+    display: flex
+    justify-content: space-between
+    padding: 30px 0 50px
+    border-top: 1px solid $neutrals6
+    border-bottom: 1px solid $neutrals6
+    +m
+      flex-direction: column
+      align-items: center
+
+    .creatorAvatar
+      display: flex
+      align-items: center
+      width: 40%
+      margin-right: 30px
+      +m
+        flex-direction: column
+        margin-right: 0
+        margin-bottom: 20px
+        img
+          margin-bottom: 10px
+
+      img
+        border-radius: 50%
+        margin-right: 10px
+
+      span
+        display: block
+        width: max-content
+        font-size: 14px
+
+    .description
+      font-size: 16px
+      font-weight: normal
+      color: $neutrals2
+
+.previewBox
+  grid-column: 1 / 2
+  grid-row: 1
+
+.details
+  grid-column: 2
+  grid-row: 1 / 3
+
+.descriptionBox
+  grid-column: 1/2
+  grid-row: 2
+  +m
+    margin-top: 48px
+.displayName
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 24px
+.displayNameText
+  font-size: 14px
+.styleAddress
+  font-size: 14px!important
+  padding-left: 6px
+  color: #777E90!important
+.textPosition
+  font-size: 14px
+  color: #777E90
+.textPrice
+  font-size: 14px
+  color: #23262F
+.userInforIcon
+
+.history
+  display: flex
+  justify-content: space-between
+  

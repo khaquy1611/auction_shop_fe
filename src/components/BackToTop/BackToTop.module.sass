@@ -1,0 +1,21 @@
+@import ../../styles/helpers
+
+.backToTop
+  position: fixed
+  top: 90%
+  right: 1.5%
+  transform: translateY(-50%)
+  animation: fadeIn 700ms ease-in-out 1s both
+  cursor: pointer
+  z-index: 999
+  width: 48px
+  height: 48px
+  +d
+    right: 1.5%
+
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+

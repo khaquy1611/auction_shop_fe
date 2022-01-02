@@ -1,0 +1,82 @@
+.wrapper {
+    margin: 80px 78px;
+}
+
+.head {
+    font-family: "Roboto";
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.title {
+    font-family: "Roboto";
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 415px) {
+    .wrapper {
+        margin: 30px 30px;
+    }
+
+    .head {
+        font-size: 32px;
+    }
+
+    .title {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    
+    .desc {
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width: 415px) and (max-width: 1024px) {
+    .terms {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    
+    .desc {
+        font-size: 18px;
+    }
+
+}
+
+.sc-bePbDJ canvas {
+    width: 70vw;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #E6E8EC;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.pdf-view {
+    position: relative;
+    width: 700%;
+    height: 600px;
+    overflow: scroll;
+}
+
+.pdf-view::after{
+    content: '';
+    clear: both;
+    
+}

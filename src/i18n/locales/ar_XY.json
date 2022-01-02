@@ -1,0 +1,306 @@
+{
+    "header.nav.marketplace": "السوق",
+    "header.nav.auction": "المزاد",
+    "header.nav.help": "المساعدة",
+    "header.search.placeholder": "البحث",
+    "header.notification.title": "الإشعار",
+    "header.notification.seeAll": "عرض الكل",
+    "header.user.balance": "رمز Balancer",
+    "header.user.manageCoinbase": "إدارة الأموال على Coinbase",
+    "header.user.profile": "ملفي التعريفي",
+    "header.user.security": "الأمان",
+    "header.user.items": "عناصري",
+    "header.user.wallet": "محفظتي",
+    "header.user.disconnect": "قطع الاتصال",
+    "header.signIn": "تسجيل الدخول",
+    "header.signup": "التسجيل",
+    "home.slide.startYourSearch": "بدء البحث",
+    "home.slide.row1": "إنشاء االرموز غير القابلة للاستبدال الخاصة بالفن الرقمي واستكشافها وجمعها.",
+    "home.slide.row2": "بناء موقع مزاد الرموز غير القابلة للاستبدال والمتجر لحملة Listen Campain.",
+    "home.creator": "المُنشئ",
+    "home.minPrice": "السعر الأدنى",
+    "home.currentBid": "العطاء الحالي",
+    "home.ending": "معّرف نهاية المزاد",
+    "home.day": "اليوم",
+    "home.hour": "الساعة",
+    "home.mins": "الدقيقة",
+    "home.secs": "الثانية",
+    "home.placeBid": "تقديم العطاء",
+    "home.viewItem": "عرض العنصر",
+    "home.allItem": "جميع العناصر في جميع المزادات",
+    "home.loadMore": "تحميل المزيد",
+    "home.saveYourTime": "وفّر وقتك مع Stacks",
+    "home.saveYourTime.buyNow": "اشترِ الآن",
+    "home.filter": "التصفية",
+    "home.filter.recentlyAdded": "أٌضيف مؤخرًا",
+    "home.filter.longAdded": "أُضيف من مدة طويلة",
+    "home.navs.allItems": "جميع العناصر",
+    "home.navs.art": "القطع الفنية",
+    "home.navs.game": "الألعاب",
+    "home.navs.photography": "التصوير الفوتوغرافي",
+    "home.navs.music": "الموسيقى",
+    "home.navs.video": "الفيديو",
+    "home.filter.price": "السعر",
+    "home.filter.likes": "الإعجابات",
+    "home.filter.creator": "المُنشئ",
+    "home.filter.priceRange": "نطاق السعر",
+    "home.filter.all": "الكل",
+    "home.filter.verifiedOnly": "للتحقق منه فقط",
+    "home.filter.mostLiked": "الأكثر إعجابًا",
+    "home.filter.leastLiked": "الأقل إعجابًا",
+    "home.filter.highestPrice": "الأعلى سعرًا",
+    "home.filter.lowestPrice": "الأقل سعرًا",
+    "backToHome": "العودة إلى الصفحة الرئيسية",
+    "profile.home": "الصفحة الرئيسية",
+    "profile.editProfile": "تحرير ملف التعريف",
+    "profile.title": "تحرير ملف التعريف",
+    "profile.description1": "يمكنك تعيين اسم العرض المُفضل، إنشاء",
+    "profile.description2": "عنوان URL الخاص بملفك التعريفي",
+    "profile.description3": "وإدارة الإعدادات الشخصية الأخرى.",
+    "profile.photo": "صورة ملف التعريف",
+    "profile.photo.description": "نوصي بصورة 400×400 على الأقل. يمكن إضافة صور Gifs أيضًا 🙌",
+    "profile.photo.upload": "تحميل",
+    "profile.accountInfo": "معلومات الحساب",
+    "profile.displayName": "اسم العرض",
+    "profile.displayName.placeholder": "أدخل اسم العرض الخاص بك",
+    "profile.language": "اللغة",
+    "profile.currency": "العملة",
+    "profile.customURL": "عنوان URL المُخصص",
+    "profile.bio": "السيرة الذاتية",
+    "profile.bio.placeholder": "بضع كلمات عن نفسك",
+    "profile.social": "اجتماعي",
+    "profile.website": "المحفظة أو الموقع الإلكتروني",
+    "profile.enterURL": "أدخل عنوان URL",
+    "profile.twitter.placeholder": "اسم المُستخدم على @twitter",
+    "profile.verify": "التحقق من الحساب",
+    "profile.addMoreSocial": "إضافة المزيد من الحسابات الاجتماعية",
+    "profile.hint": "لتحديث إعداداتك، يجب عليك توقيع الرسالة من خلال محفظتك. انقر فوق \"تحديث ملف التعريف\" ثم وقع على الرسالة",
+    "profile.updateProfile": "تحديث ملف التعريف",
+    "profile.clearAll": "مسح الكل",
+    "security.backToProfile": "عودة إلى ملف التعريف",
+    "security.profile": "ملف التعريف",
+    "security": "الأمان",
+    "security.changePassword": "تغيير كلمة المرور",
+    "security.changePassword.description": "اختر كلمة مرور قوية ولا تستخدمها لحسابات أخرى.",
+    "security.changePassword.newPassword": "كلمة المرور الجديدة",
+    "security.changePassword.newPassword.placeholder": "كلمة المرور",
+    "security.changePassword.confirmPassword": "تأكيد كلمة المرور",
+    "security.changePassword.confirmPassword.placeholder": "تأكيد كلمة المرور",
+    "security.changePassword.button": "تغيير كلمة المرور",
+    "security.changePassword.clearAll": "مسح الكل",
+    "security.2fa": "المصادقة الثنائية",
+    "security.step1": "الخطوة الأولى",
+    "security.step1.title": "الحصول على تطبيق المُصادقة",
+    "security.step1.download": "التنزيل والتثبيت",
+    "security.step1.or": "أو",
+    "security.step1.forPhoneOrTablet": "للهاتف أو الجهاز اللوحي",
+    "security.step2": "الخطوة الثانية",
+    "security.step2.title": "امسح رمز الاستجابة السريعة هذا ضوئيًا",
+    "security.step2.description": "افتح تطبيق المصادقة، واضغط على الرمز \"+\" في أعلى يمين التطبيق، وامسح صورة رمز استجابة سريعة هذه ضوئيًا باستخدام كاميرا هاتفك.",
+    "security.step2.trouble": "من خلال هاتفك أم أنك لديك مشاكل في المسح الضوئي؟",
+    "security.step3": "الخطوة الثالثة",
+    "security.step3.title": "أدخل الرمز الذي تم إنشاؤه من خلال تطبيقك",
+    "security.step3.description": "بمجرد مسح رمز الاستجابة السريعة ضوئيًا، أدخل الرمز المكون من 6 أرقام الذي تم إنشائه من خلال تطبيق المصادقة",
+    "security.step3.authenticationCode": "رمز المصادقة",
+    "security.step3.enable": "تمكين",
+    "security.history": "المحفوظات",
+    "security.history.activeSession": "جلسات المُستعرض النشطة",
+    "security.history.activeSession.description": "تم تسجيل دخول هذا المستعرض حاليًا إلى حسابك",
+    "security.history.lastLogin": "آخر 10 عمليات لتسجيل الدخول",
+    "security.history.table.signedIn": "تم تسجيل الدخول",
+    "security.history.table.location": "الموقع",
+    "security.history.table.ip": "عنوان IP",
+    "security.history.table.browser": "المُستعرض",
+    "user.editCover": "تحرير صورة الغلاف",
+    "user.editProfile": "تحرير ملف التعريف",
+    "user.follow": "المتابعة",
+    "user.followers": "المتابعون",
+    "user.unfollow": "إلغاء المتابعة",
+    "user.share": "مشاركة الرابط إلى هذه الصفحة",
+    "user.report": "الإبلاغ",
+    "user.report.title": "يرجى وصف لماذا ترى أنه يجب إزالة هذا العنصر من السوق",
+    "user.report.message": "الرسالة",
+    "user.report.message.placeholder": "أخبرنا بالتفاصيل",
+    "user.report.send": "إرسال الآن",
+    "user.report.cancel": "إلغاء",
+    "user.memberSince": "عضو منذُ",
+    "user.dragPhoto": "اسحب صورتك وأفلتها هنا",
+    "user.browsePhoto": "أو انقر للاستعراض",
+    "user.savePhoto": "حفظ الصورة",
+    "myItem.menu.onSale": "معروض بسعر مُخفض",
+    "myItem.menu.collectibles": "المقتنيات",
+    "myItem.menu.created": "تم الإنشاء",
+    "myItem.menu.likes": "الإعجابات",
+    "myItem.menu.following": "المتابعة",
+    "myItem.menu.followers": "المتابعون",
+    "item.placeBid": "تقديم العطاء",
+    "item.endIn": "ينتهي في",
+    "item.days": "أيام",
+    "item.inStock": "متوفر في المخزون",
+    "item.highestBid": "أعلى عطاء",
+    "item.newBid": "عطاء جديد 🔥 ",
+    "item.placeBid.connectWallet": "تحتاج إلى توصيل محفظتك أولاً لتوقيع الرسائل وإرسال المعاملة إلى شبكة إثيريوم",
+    "item.placeBid.connectWallet.button": "توصيل المحفظة",
+    "item.placeBid.connectWallet.button.cancel": "إلغاء",
+    "item.placeBid.title": "تقديم العطاء",
+    "item.placeBid.description": "أنت على وشك إضافة القليل لأجل",
+    "item.placeBid.from": "من",
+    "item.placeBid.yourBid": "العطاء الخاص بك",
+    "item.placeBid.cancel": "إلغاء",
+    "item.placeBid.enterBid": "إدخال العطاء",
+    "item.placeBid.yourBalance": "رصيدك",
+    "item.placeBid.serviceFee": "رسوم الخدمة",
+    "item.placeBid.discount": "الخصم",
+    "item.placeBid.totalBidAmount": "إجمالي مبلغ العطاء",
+    "market.navs.allItems": "جميع العناصر",
+    "market.navs.Art": "القطع الفنية",
+    "market.navs.Game": "الألعاب",
+    "market.navs.Photography": "التصوير الفوتوغرافي",
+    "market.navs.Music": "الموسيقى",
+    "market.navs.Video": "الفيديو",
+    "market.filter": "التصفية",
+    "market.filter.priceRange": "نطاق السعر",
+    "market.filter.sortBy": "فرز حسب",
+    "market.filter.likes": "الإعجابات",
+    "market.filter.creator": "المُنشئ",
+    "market.filter.all": "الكل",
+    "market.filter.verifiedOnly": "للتحقق منه فقط",
+    "market.filter.mostLiked": "الأكثر إعجابًا",
+    "market.filter.leastLiked": "الأقل إعجابًا",
+    "market.filter.oldest": "الأقدم",
+    "market.filter.recentlyAdded": "أٌضيف مؤخرًا",
+    "market.loadMore": "تحميل المزيد",
+    "hotBid.title": "عطاء سريع",
+    "itemDetail.of": "من",
+    "itemDetail.highestBidBy": "أعلى عطاء من قِبل",
+    "itemDetail.minimumPrice": "السعر الأدنى",
+    "itemDetail.bidStep": "عطاء محدود",
+    "itemDetail.placeBid": "تقديم العطاء",
+    "itemDetail.donate": "هل يمكنك التبرع إلى ListenCampaign؟",
+    "itemDetail.bidHistory": "محفوظات العطاء",
+    "itemDetail.bidHistory.bidPlacedBy": "قدم العطاء من قِبل",
+    "itemDetail.bidHistory.at": "بتاريخ",
+    "itemDetail.category.art": "القطع الفنية",
+    "itemDetail.category.unlockable": "غير قابل للتأمين",
+    "itemDetail.share": "مشاركة",
+    "itemDetail.favorite": "المُفضلة",
+    "itemDetail.more": "المزيد",
+    "itemDetail.action.changePrice": "تغيير السعر",
+    "itemDetail.action.transferToken": "رمز التحويل",
+    "itemDetail.action.removeFromSale": "إزالة من البيع",
+    "itemDetail.action.burnToken": "حرق الرمز",
+    "itemDetail.action.report": "الإبلاغ",
+    "itemDetail.info": "المعلومات",
+    "itemDetail.owner": "المالك",
+    "itemDetail.creator": "المُنشئ",
+    "itemDetail.showMore": "عرض المزيد",
+    "itemDetail.showLess": "إظهار أقل",
+    "itemDetail.otherCollections": "مجموعات أخرى",
+    "itemDetail.otherCollections.viewMore": "عرض المزيد",
+    "itemDetail.otherCollections.by": "من قِبل",
+    "itemDetail.otherCollections.items": "العناصر",
+    "wallet": "المحفظة",
+    "wallet.profile": "ملف التعريف",
+    "wallet.backToProfile": "عودة إلى ملف التعريف",
+    "wallet.convertToUSD": "التحويل إلى الدولار الأمريكي",
+    "wallet.withdraw": "السحب",
+    "wallet.deposit": "الإيداع",
+    "wallet.availableBalance": "الإيداع",
+    "wallet.pending": "مُعلق",
+    "wallet.transaction": "المعاملات السابقة",
+    "wallet.downloadCSV": "تنزيل ملف CSV",
+    "wallet.date": "التاريخ",
+    "wallet.description": "الوصف",
+    "wallet.amount": "المبلغ",
+    "wallet.viewTransaction": "عرض المعاملة",
+    "wallet.addFund.title": "إضافة أموال إلى رصيدك",
+    "wallet.addFund.description": "بالشراء، فإنك توافق على الشروط والأحكام الخاصة بنا، بما في ذلك خضوع عمليات السحب للمراجعة وبأن جميع المبيعات نهائية. لا يمكن استرداد أي مبالغ بعد الشراء.",
+    "wallet.addFund.button": "إضافة أموال",
+    "wallet.setup.account": "إعداد الحساب",
+    "wallet.setup.create": "إنشاء حساب",
+    "wallet.connectMetaMask": "الإتصال بـ Metamask",
+    "wallet.connect.listten": "الاتصال بالرمز غير القابل للاستبدال من Listten",
+    "wattet.notificaltion.installMetamask": "يُرجى تثبيت Metamask",
+    "withdraw": "السحب",
+    "withdraw.backToWallet": "العودة إلى المحفظة",
+    "withdraw.wallet": "المحفظة",
+    "withdraw.send": "إرسال",
+    "withdraw.manageAddress": "إدارة العناوين",
+    "withdraw.recipientAddress": "عنوان المُستلم",
+    "withdraw.recipientAddress.description": "تأكد من إرسالك إلى عنوان على شبكة إثيريوم الرئيسية",
+    "withdraw.amount": "المبلغ بعملة الدولار الأمريكي الرقمي",
+    "withdraw.amount.description": "ستتم إضافة رسوم للشبكة على السحب بعملة الدولار الأمريكي الرقمي",
+    "withdraw.review": "المراجعة",
+    "withdraw.warn": "يمكنك أيضًا تداول عملة الدولار الأمريكي الرقمي على قائمة العملات",
+    "withdraw.available": "متوفر",
+    "withdraw.max": "الحد الأقصى",
+    "deposit": "الإيداع",
+    "deposit.backToWallet": "العودة إلى المحفظة",
+    "deposit.wallet": "المحفظة",
+    "deposit.title": "المحفظة",
+    "deposit.your": "الخاص بك",
+    "deposit.walletAddress": "عنوان المحفظة",
+    "deposit.warn": "تحذير: أرسل فقط عملة الدولار الأمريكي الرقمي (ERC-20) المتوافق مع إثيريوم. سيتم فقدان الأصول الأخرى· لا ترسل أصول Binance Smart Chain، يرجى التأكد من إرسال المعاملات بحد غاز لا يقل عن 35,000.",
+    "deposit.copy": "النسخ",
+    "deposit.attention": "قد يتطلب الأمر ما يصل إلى 30 تأكيدًا من الشبكة قبل إتاحة الإيداع.",
+    "deposit.step1": "الخطوة الأولى",
+    "deposit.step2": "الخطوة الثانية",
+    "deposit.step3": "الخطوة الثالثة",
+    "deposit.purchasedDetail": "تفاصيل الشراء",
+    "deposit.recipient": "المُستلم (أنت)",
+    "deposit.itemName": "اسم العنصر",
+    "deposit.paymentMethod": "طرق الدفع المتاحة",
+    "deposit.card": "بطاقات الائتمان/الخصم",
+    "deposit.instant": "فورية",
+    "deposit.upTo": "ما يصل إلى",
+    "deposit.day": "اليوم",
+    "deposit.serviceFee": "رسوم الخدمة",
+    "deposit.recommended": "الموصى به",
+    "deposit.gasFee": "تُطبق رسوم الغاز",
+    "deposit.total": "الإجمالي",
+    "deposit.cancelPurchase": "الإجمالي",
+    "deposit.purchaseNow": "اشترِ الآن",
+    "deposit.security": "الأمان مُقدم من قِبل",
+    "deposit.step2.name": "الاسم (كما يظهر على بطاقتك)",
+    "deposit.step2.cardNumber": "رقم بطاقة الائتمان",
+    "deposit.step2.validThrough": "صالح حتى",
+    "deposit.step2.securityCode": "رمز الأمان",
+    "deposit.step2.backToPayment": "العودة إلى طرق الدفع",
+    "deposit.step2.next": "التالي: إضافة تفاصيل Bling",
+    "deposit.step3.address": "العنوان",
+    "deposit.step3.residentalAddress": "عنوان الإقامة",
+    "deposit.step3.city": "المدينة",
+    "deposit.step3.state": "الولاية/المقاطعة",
+    "deposit.step3.country": "الدولة",
+    "deposit.step3.zip": "الرمز البريدي",
+    "deposit.step3.back": "العودة إلى تفاصيل بطاقة الائتمان",
+    "deposit.step3.confirm": "تأكيد الشراء",
+    "deposit.paymentPopup.pay": "الدفع باستخدام",
+    "deposit.paymentPopup.rate": "تنتهي صلاحية سعر الصرف في",
+    "deposit.paymentPopup.selectCoin": "أو حدد عملة مشّفرة",
+    "deposit.infoPopup.title": "مطلوب معلومات إضافية",
+    "deposit.infoPopup.description": "هذه المعلومات مطلوبة قبل الدفع للحفاظ على سلامة مجتمعنا وخلق تجربة أقوى لك، ولن تتم مشاركتها لأغراض التسويق",
+    "deposit.infoPopup.firstName": "الاسم الأول",
+    "deposit.infoPopup.lastName": "الاسم الأخير",
+    "deposit.infoPopup.language": "اللغة",
+    "deposit.infoPopup.dob": "تاريخ الميلاد",
+    "deposit.infoPopup.dob.hidden": "مخفي، يمكنك أنت فقط رؤيته",
+    "deposit.infoPopup.useCard": "بطاقة ائتمان المستخدم بدلاً من ذلك",
+    "deposit.infoPopup.continue": "المتابعة",
+    "footer.info": "بناء موقع مزاد الرموز غير القابلة للاستبدال والمتجر لحملة Listen Campain.",
+    "footer.nav.marketplace": "السوق",
+    "footer.nav.collection": "المجموعة",
+    "footer.nav.events": "الفعاليات",
+    "footer.nav.help": "المساعدة",
+    "footer.joinNewsletter": "الانضمام إلى النشرة الإخبارية",
+    "footer.subscribe": "اشترك في نشرتنا الإخبارية للحصول على المزيد من الأخبار عن حملة Listen.",
+    "footer.enterEmail": "أدخل بريدك الإلكتروني",
+    "footer.row1": "حملة THE LISTEN CAMPAIGN",
+    "footer.row2": "الاحتفاء بحلول لمشاكل الأطفال المعرضين للخطر والمحرومين",
+    "footer.row3": "إن حملة The Listen campaign هي حملة فريدة وسنوية وعالمية تضم المشاهير، لتسلط الضوء على المشاكل التي يواجهها مليار طفل في العالم من الفئات الأشد عرضة للخطر والمحرومة، بالإضافة إلى الاحتفاء بالمشروعات التي توفر بالفعل الحلول التي نحن بحاجة إليها بشدة. وفي صميم الحملة، يروي الأطفال قصصهم.",
+    "footer.copyRight": "حقوق الطبع والنشر © لعام 2021 محفوظة لشركة ListenNFT LLC. جميع الحقوق محفوظة",
+    "footer.cookies": "نستخدم ملفات تعريف الارتباط لتقديم خدمة أفضل.",
+    "footer.accept": "قبول",
+    "moon.pay.result.title.loading": "النظام قيد المُعالجة",
+    "moon.pay.result.title.content": "الرجاء الانتظار لحظة"
+}

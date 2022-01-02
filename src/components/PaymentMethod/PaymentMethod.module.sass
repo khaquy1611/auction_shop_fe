@@ -1,0 +1,209 @@
+@import ../../styles/helpers
+
+
+::-webkit-scrollbar 
+  width: 2px !important
+
+::-webkit-scrollbar-thumb 
+  background: #ccc !important
+
+.PayTitle
+    font-size: 32px
+    line-height: 40px
+    font-weight: 700
+    color: #23262F
+    // padding-top: 12px
+.Paydes
+    color: #23262F
+    font-size: 16px
+    line-height: 24px
+    font-weight: 400
+    padding-top: 14px
+    padding-bottom: 20px
+.PayContainerContent
+    width: 100%
+.PayContainerItem
+    border: 1px solid #E6E8EC
+    border-radius: 12px
+    height: 120px
+    width: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-bottom: 25px
+    cursor: pointer
+
+    &:active
+        border: 1px solid #EE4E00
+.PayContainerItemImg
+    margin: 0 20px
+
+.PayContainerItemText
+    flex: 1
+    font-size: 26px
+    font-weight: 500
+    line-height: 32px
+    color: #23262F
+
+.PayContainerItemTextC
+    font-size: 26px
+    font-weight: 500
+    line-height: 32px
+    color: #23262F
+    margin-left: -45px
+    padding-right: 40px
+.PayBtn
+    width: 100%
+    padding-left: 20px
+    padding-right: 20px
+    background-color: #EE4E00
+    border-radius: 10px
+    color: #FCFCFD
+    padding: 6px
+    &:hover
+        background: #cc6a00
+
+.CancelBtn
+    width: 100%
+    margin: 10px 0
+    padding: 6px 20px
+    background-color: #ffffff
+    border-radius: 10px
+    border: solid 1px #ccc
+    color: #FCFCFD
+    text-align: center
+    cursor: pointer
+    &:hover
+        background: #cc6a00
+
+.PayContainerCheckBox
+    margin-left: -30px
+    cursor: pointer
+.PayContainerRadio
+    
+@media (max-width: 415px)
+    .PayContainerItemImg
+        width: 30px
+        height: 30px
+
+@media (max-width: 767px)
+    .PayContainerItemText, .PayContainerItemTextC
+        margin-left: 0
+
+.Selected
+    border: 1px solid #EE4E00
+    background: rgba(238, 78, 0, 0.08)
+
+.Header
+    display: flex
+    flex-direction: row
+    align-items: center
+
+.BackBtn
+    width: 32px
+    height: 32px
+    cursor: pointer
+
+.TitleSelectWallet
+    font-size: 32px
+    line-height: 40px
+    font-weight: 700
+    color: #23262F
+    flex: 1
+
+.listGroup
+    flex-shrink: 0
+    width: 100%
+    margin-right: auto
++d
+    width: 384px
++t
+    width: 300px
++m
+    width: 100%
+    margin-bottom: 40px
+
+.group
+    // background: #FFFFFF
+    // box-shadow: 0px 1px 4px rgba(15, 15, 15, 0.1)
+    // border-radius: 10px
+    margin-bottom: 25px
+
+.label
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 15px
+    font-size: 14px
+    line-height: 20px
+    cursor: pointer
+
+.coinItem
+    display: flex
+    padding: 20px 15px
+    cursor: pointer
+    align-items: center
+
+    .walletName 
+        flex: 1
+
+    &:hover
+        background: $neutrals6
+
+    &:not(:first-child)
+        border-top: 1px solid $neutrals6
+
+    .addressContainer
+        display: flex
+
+        .walletAddress
+            padding-right: 10px
+
+    .imgWallet
+        width: 33px
+        height: 33px
+        object-fit: cover
+        margin-right: 12px
+    
+    .walletInfo
+        flex: 1
+        display: flex
+        flex-direction: column
+    
+    .imgChecked
+        width: 15px
+        height: 15px
+        object-fit: cover
+
+    span
+        font-size: 14px
+        line-height: 20px
+.listCoin
+  height: 0px
+  overflow: hidden
+  transition: all .2s
+
+  &.expandListCoin
+    height: auto
+    overflow: initial
+
+.flex 
+    display: flex
+
+.flex-row
+    flex-direction: row
+
+.flex-col
+    flex-direction: column
+
+.flex-1
+    flex: 1
+
+.ContentNameContainer
+    display: flex
+    flex: 1
+    flex-direction: column
+
+.ChainSupport
+    font-size: 14px
+    font-weight: normal

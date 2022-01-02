@@ -1,0 +1,294 @@
+@import ../../styles/helpers
+
+.top
+  display: flex
+  align-items: center
+  margin-bottom: 48px
+  padding-bottom: 32px
+  border-bottom: 1px solid $neutrals6
+  +t
+    display: block
+    margin-bottom: 32px
+    padding-bottom: 0
+    border: none
+  +m
+    margin-bottom: 24px
+
+.title
+  margin-right: auto
+  +body-1
+  +t
+    display: none
+
+.search
+  position: relative
+  flex-shrink: 0
+  width: calc(25% - 32px)
+  margin-bottom: 24px
+  +t
+    width: 100%
+    margin: 0
+  +r(1024)
+    margin-bottom: 20px
+
+.input
+  width: 100%
+  height: 48px
+  padding: 0 48px 0 14px
+  border-radius: 12px
+  background: none
+  border: 2px solid $neutrals6
+  +poppins
+  +caption-1
+  color: $neutrals2
+  transition: border-color .2s
+  +placeholder
+    color: $neutrals4
+
+  &:focus
+    border-color: $orange-light
+
+.result
+  position: absolute
+  top: 32px
+  right: 8px
+  bottom: 8px
+  width: 32px
+  height: 32px
+  border-radius: 50%
+  background: $orange-light
+  transition: background .2s
+
+  svg
+    fill: $neutrals8
+
+  &:hover
+    background: darken($orange-light, 10)
+
+.sorting
+  display: flex
+  align-items: center
+  margin-bottom: 48px
+  overflow: hidden
+  +t
+    display: block
+  +m
+    margin-bottom: 32px
+
+  .dropdown
+    width: 256px
+    margin-right: auto
+    +t
+      width: 100%
+      margin: 0 0 32px
+
+.nav
+  display: flex
+  align-items: center
+  padding-bottom: 25px
+  border-bottom: 1px solid $neutrals6
+  +m
+    margin: 0 -32px
+    overflow: auto
+    overflow-x: auto
+    -ms-overflow-style: none
+    scrollbar-width: none
+    -webkit-overflow-scrolling: touch
+    &::-webkit-scrollbar
+      display: none
+    &:before,
+    &:after
+      content: ""
+      flex-shrink: 0
+      width: 32px
+      height: 1px
+
+.link
+  flex-shrink: 0
+  margin: 0 6px
+  padding: 6px 12px
+  border-radius: 14px
+  background: none
+  height: 28px
+  +button-2
+  color: $neutrals4
+  transition: all .2s
+  font-weight: 600
+  +m
+    margin: 0
+
+  &:hover
+    color: $orange-light
+
+  &.active
+    background: $purple-dark
+    color: $white
+
+  &:not(:last-child)
+    +m
+      margin-right: 12px
+
+  &:first-child
+    margin-left: 0
+
+.row
+  +t
+    display: block
+
+.wrapper
+  flex-grow: 1
+  margin-top: 40px
+  display: flex;
+  justify-content: center;
+  +t
+    padding-left: 0
+
+.filters
+  flex-shrink: 0
+  width: 100%
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  margin: 30px 0 20px
+  display: none
+  transition: ease-in-out all 2s
+
+  &.showFilter
+    display: flex
+    margin-bottom: 0
+
+  +t
+    width: 100%
+    margin-bottom: 32px
+
+  .range, .item
+    margin-bottom: 24px
+    width: calc(25% - 16px)
+    +r(768)
+      width: 100%
+
+  .dropdown
+    font-weight: 600
+
+.scale
+  display: flex
+  justify-content: space-between
+  font-weight: 500
+
+.group
+  margin-bottom: 24px
+  padding: 24px 0
+  border-width: 1px 0
+  border-style: solid
+  border-color: $neutrals6
+
+.item
+  &:not(:last-child)
+    margin-bottom: 24px
+
+.label
+  margin-bottom: 12px
+  +hairline-2
+  color: $neutrals5
+  font-weight: 600
+
+.reset
+  display: inline-flex
+  align-items: center
+  width: 100%
+  justify-content: flex-end
+  +button-2
+  cursor: pointer
+  transition: color .2s
+
+  .button
+    background: $orange-dark
+
+    &:hover
+      background: $orange-light
+
+  svg
+    margin-right: 8px
+    fill: $white
+    transition: fill .2s
+
+  &:hover
+    color: $orange-light
+
+.list
+  width: 100%
+  +m
+
+.listItem
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+.endMessage
+  text-align: center
+  margin-top: 8px
+  color: #777E90
+
+.card
+  margin: 32px 16px 0
+  border-radius: 20px
+
+
+
+.btns
+  margin-top: 32px
+  text-align: center
+
+  .button
+    @include loadingAnimation()
+
+.processBar
+  position: relative
+  z-index: -2
+
+  &:after,
+  &:before
+    content: ""
+    display: block
+    width: 100%
+    height: 8px
+    background: #fff
+    position: absolute
+    bottom: -6px
+    left: 0
+    z-index: -1
+
+  &:before
+    top: -6px
+    bottom: initial
+    transform: rotate(-2deg)
+
+  &:after
+    transform: rotate(2deg)
+
+  +m
+    &:before
+      top: -7px
+      transform: rotate(-1deg)
+    &:after
+      bottom: -7px
+      transform: rotate(1deg)
+
+.filterMobile
+  display: none
+  +m
+    display: block
+    margin-top: 24px
+    > div
+      margin-bottom: 24px
+
+.resetFilter
+  display: none
+  +m
+    display: block
+    padding-top: 24px
+    border-top: 1px solid $neutrals6
+    width: 100%
+    button
+      font-weight: 600
+    svg
+      margin-right: 10px

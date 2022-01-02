@@ -1,0 +1,171 @@
+@import ../../styles/helpers
+
+
+
+
+.footer
+  border-top: 1px solid $neutrals6
+  .hideFooter
+    maxWidth: 1140px
+    margin: auto
+    display: none
+  .showFooter
+    display: block
+    +m
+      text-align: center
+      margin: 1rem 0
+   
+.row
+  display: flex
+  padding: 80px 0 48px
+  border-bottom: 1px solid $neutrals6
+  +t
+    display: block
+  +m
+    padding: 64px 0 48px
+
+.col
+  &:first-child
+    flex-grow: 1
+    padding-right: 32px
+    max-width: 450px
+    +t
+      position: relative
+      margin-bottom: 32px
+      padding: 0
+
+  &:nth-child(2)
+    display: flex
+    flex-shrink: 0
+    width: 400px
+    justify-content: space-around
+    +d
+      width: 276px
+    +t
+      margin-bottom: 32px
+    +m
+      display: block
+      border-width: 1px 0
+      border-style: solid
+      border-color: $neutrals6
+    
+
+  &:nth-child(3)
+    flex-shrink: 0
+    width: 384px
+    padding-left: 32px
+    +d
+      width: 304px
+    +t
+      width: 100%
+      padding: 0
+
+.logo
+  display: inline-block
+  margin-bottom: 2px
+  margin-top: -5px
+
+  
+
+  img
+    width: 90px
+    display: flex
+    margin: auto
+
+.info
+  min-width: 256px
+  color: $neutrals2
+  +body-1
+  font-size: 16px
+  font-weight: normal
+  +d
+    font-size: 16px
+
+.version
+  display: flex
+  align-items: center
+  margin-top: 24px
+  +t
+    position: absolute
+    top: 5px
+    right: 0
+    margin: 0
+
+.details
+  margin-right: 16px
+  +caption-2
+  +m
+    margin-right: 10px
+
+.category
+  color: $neutrals2
+  font-weight: 600
+  +body-bold-2
+  +t
+    margin-block-end: 24px
+
+.text
+  padding-top: 18px
+  margin-bottom: 24px
+  color: $neutrals2
+  font-weight: normal
+.foot
+  maxWidth: 1140px
+  margin: auto
+  display: flex
+  justify-content: space-between
+  padding: 32px 0
+  +caption-2
+  +m
+    display: block
+    padding: 24px 0 32px
+
+.copyright
+  color: $neutrals4
+  font-size: 12px
+  font-weight: normal
+  +m
+    text-align: center
+
+.note
+  font-size: 12px
+  color: $neutrals2
+  +m
+    display: none
+
+  a
+    
+    margin-left: 16px
+    font-weight: 600
+    color: $orange-dark
+    transition: color .2s
+
+    &:hover
+      color: darken($orange-light, 10)
+
+.introduce
+  text-align: center
+  padding: 60px 12px
+  border-bottom: 1px solid $neutrals6
+  color: $neutrals2
+
+  p
+    font-size: 12px
+    font-weight: normal
+
+  h3
+    font-size: 16px
+    margin: 12px 0
+
+  h2
+    font-size: 24px
+
+.form
+  input
+    font-weight: normal
+
+
+.footer
+    
+    a
+    

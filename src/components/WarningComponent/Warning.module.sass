@@ -1,0 +1,66 @@
+.warning
+    padding: 15px
+    background: rgba(239, 70, 111, 0.08)
+    color: rgba(239, 70, 111, 1)
+    border-radius: 8px
+    margin-bottom: 25px
+    font-weight: normal
+    font-size: 12px
+    display: flex
+
+.WarningItem
+    display: flex
+
+.warningContent
+    margin-left: 10px
+
+.TitleDetail
+    font-size: 14px
+    font-weight: 600
+.SpnDetail
+    text-decoration: underline
+    font-size: 14px
+    font-weight: 600
+    margin-top: -3px
+    padding-left: 4px
+    color: rgba(239, 70, 111, 1)
+    cursor: pointer
+
+.SpnDetailItem
+    display: flex
+
+@media (min-width: 761px) and (max-width: 1023px)
+    .warning
+        margin-top: -10px 
+    .SpnDetail
+        padding-left: 0
+   
+    .WarningItem
+        display: block!important
+
+@media (max-width: 767px)
+    .detail
+        margin-bottom: -20px
+    .warning
+        margin-bottom: 8px
+        padding: 5px
+    .WarningItem
+        display: block!important
+        width: 100%
+    .SpnDetail
+        padding-left: 0
+
+@media (min-width: 1024px) 
+  .TitleDetail
+    font-size: 12px
+  .warning
+    margin-right: 70px
+@media (min-width: 1050px) 
+  .warning
+    margin-right: 20px
+@media (min-width: 1100px) 
+   .warning
+    margin-right: 23px
+@media (min-width: 1400px) 
+  .warning
+    margin-right: 20px

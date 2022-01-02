@@ -1,0 +1,35 @@
+@import ../../../styles/helpers
+
+.info
+  margin-bottom: 32px
+  +body-bold-1
+
+.group
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin-bottom: 32px
+  padding-bottom: 32px
+  border-bottom: 1px solid $neutrals6
+
+.checkbox
+  &:not(:last-child)
+    margin-bottom: 24px
+
+.btns
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -6px
+  +s
+    flex-direction: column
+
+  .button
+    width: calc(50% - 12px)
+    flex: 0 0 calc(50% - 12px)
+    height: 48px
+    margin: 0 6px
+    padding: 0 8px
+    +s
+      width: 100%
+      margin-bottom: 12px
+      flex: initial

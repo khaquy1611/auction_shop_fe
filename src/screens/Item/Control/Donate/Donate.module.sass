@@ -1,0 +1,129 @@
+@import ../../../../styles/helpers
+
+.title
+  margin-bottom: 32px
+
+.line
+  display: flex
+  margin-bottom: 32px
+
+  strong
+    white-space: nowrap
+    font-weight: 500
+
+.icon
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-shrink: 0
+  width: 48px
+  height: 48px
+  margin-right: 16px
+  background: $purple
+  border: 2px solid $purple
+  border-radius: 50%
+  transition: all .2s
+
+  svg
+    fill: $neutrals8
+    transition: fill .2s
+
+  .loader
+    position: absolute
+    top: -2px
+    left: -2px
+    right: -2px
+    bottom: -2px
+
+.details
+  flex-grow: 1
+
+.info
+  +body-bold-2
+
+.text
+  color: $neutrals4
+
+.switch
+  flex-shrink: 0
+  margin-left: 16px
+
+.btns
+  margin: 30px 0
+
+.button
+  width: 100%
+
+  &:not(:last-child)
+    margin-bottom: 8px
+
+.warning
+  padding: 24px
+  background: rgba(239, 70, 111, 0.08)
+  color: rgba(239, 70, 111, 1)
+  border-radius: 8px
+  font-weight: normal
+  font-size: 12px
+  display: flex
+  align-items: center
+
+  img
+    margin-right: 15px
+
+  span
+    display: block
+
+.note
+  color: $neutrals5
+  font-weight: normal
+  font-size: 12px
+  line-height: 16px
+  margin-bottom: 12px
+
+.field
+  margin-bottom: 32px
+
+  &.last
+    margin-bottom: 12px
+
+  .label
+    display: flex
+    justify-content: space-between
+    color: $neutrals5
+    text-transform: uppercase
+    font-size: 12px
+    margin-bottom: 10px
+
+    a
+      color: $neutrals5
+
+      span
+        margin-right: 10px
+
+  input, .bgInput p
+    border: 2px solid $neutrals6
+    box-sizing: border-box
+    border-radius: 12px
+    color: $neutrals2
+    font-size: 12px
+    height: 48px
+    width: 100%
+    padding: 16px
+    font-weight: 600
+
+  .bgInput p
+    background-repeat: no-repeat
+    background-size: 26px
+    background-position: 16px center
+    padding-left: 60px
+    line-height: 48px
+    display: flex
+    align-items: center
+    color: $neutrals4
+
+    .orangeText
+      margin-left: 5px
+
+.orangeText
+  color: $orange-dark

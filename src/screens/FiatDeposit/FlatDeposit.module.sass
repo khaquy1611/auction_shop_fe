@@ -1,0 +1,743 @@
+@import ../../styles/helpers
+
+.head
+  margin-bottom: 30px
+  padding-bottom: 20px
+  border-bottom: 2px solid $neutrals6
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  .breadcrumb ul
+    display: flex
+    align-items: center
+
+    li
+      display: flex
+      align-items: center
+      font-size: 14px
+
+      .button
+        color: $neutrals2
+
+      svg
+        transform: rotate(-90deg)
+
+      > *
+        margin: 0 15px
+
+      &:first-child
+        color: $neutrals4
+
+      &:last-child
+        .button
+          margin-right: 0
+
+  +m
+    padding-bottom: 24px
+
+.back
+  display: inline-flex
+  align-items: center
+  color: $neutrals2
+
+  svg
+    margin-right: 24px
+    transition: transform .2s
+    +m
+      flex-shrink: 0
+      width: 24px
+      height: 24px
+      margin-right: 16px
+
+  &:hover
+    svg
+      transform: translateX(-2px)
+
+.stage
+  +m
+    font-size: 24px
+
+.body
+  display: flex
+
+  .back
+    margin-left: 5px
+    color: $orange-dark
+
+  +m
+    display: block
+
+.listGroup
+  flex-shrink: 0
+  width: 25%
+  margin-right: auto
+  +d
+    width: 384px
+  +t
+    width: 300px
+  +m
+    width: 100%
+    margin-bottom: 40px
+
+.group
+  background: #FFFFFF
+  box-shadow: 0px 1px 4px rgba(15, 15, 15, 0.1)
+  border-radius: 10px
+  margin-bottom: 25px
+
+  .label
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 15px
+    font-size: 14px
+    line-height: 20px
+    cursor: pointer
+
+  .coinItem
+    padding: 20px 15px
+
+    &:hover
+      background: $neutrals6
+
+    &:not(:first-child)
+      border-top: 1px solid $neutrals6
+
+    img
+      width: 33px
+      height: 33px
+      object-fit: cover
+      margin-right: 12px
+
+    span
+      font-size: 14px
+      line-height: 20px
+
+.wrapper
+  flex-grow: 1
+  width: 75%
+  padding-left: 30px
+  +x
+    padding-left: 5%
+  +t
+    padding-left: 5%
+  +m
+    padding-left: 0
+    width: 100%
+
+  & > div
+    &:not(:last-child)
+      margin-bottom: 48px
+
+  .block
+    display: block
+    box-shadow: 0px 1px 4px rgba(15, 15, 15, 0.1)
+    border-radius: 10px
+
+    &.purchaseDetail
+      .label
+        min-width: 130px
+        padding-right: 32px
+
+    &.blockTotal
+      .row
+        +m
+          flex-direction: row
+          align-items: center
+
+    &.stepTwo
+      padding: 24px
+      +m
+        padding: 24px 16px
+
+      .infor
+        border: none
+
+      .groupSectionInput
+        display: flex
+        justify-content: space-between
+        width: 100%
+
+        .sectionInput
+          width: calc(100% / 3)
+          margin-right: 16px
+          +m
+            margin-right: 8px
+
+          &:last-child
+            margin-right: 0
+
+      .sectionInput
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        width: 100%
+        margin-bottom: 15px
+        position: relative
+
+        label
+          color: $neutrals5
+          margin-bottom: 12px
+          min-height: 24px
+          font-weight: normal
+
+        .input
+          font-size: 14px
+          font-weight: 600
+
+        img
+          position: absolute
+          right: 48px
+          bottom: 5px
+
+          &:last-child
+            right: 12px
+
+    &.stepThree
+      .subTitle
+        border-bottom: 1px solid $neutrals6
+        width: 100%
+        padding-bottom: 5px
+
+      .infor
+        margin-bottom: 0
+
+      .groupSectionInput
+        flex-wrap: wrap
+        justify-content: space-between
+
+        .sectionInput
+          width: calc(50% - 5px)
+          margin: 15px 0 0
+
+      .sectionInput
+        margin: 15px 0 0
+
+    .row
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 0 16px
+      +m
+        align-items: flex-start
+      +r(460)
+        padding: 10px 8px
+        .button
+          margin: 12px 0
+          width: 100%
+
+          &:last-child
+            margin-top: 12px
+
+    .link
+      border: none
+      box-shadow: none
+      background: none
+      margin: 0
+
+  .action
+    .button
+      margin: 16px 10px
+      height: 40px
+      font-size: 14px
+      line-height: 16px
+
+      &:last-child
+        margin-top: 0
+
+  .infor
+    display: flex
+    border-top: 1px solid #ebebeb
+    border-bottom: 1px solid #ebebeb
+    margin-bottom: 25px
+    flex-wrap: wrap
+
+    &.purchase
+      padding: 24px 8px
+      font-weight: 500
+
+      p
+        display: flex
+        justify-content: center
+        width: 100%
+
+      span
+        margin-left: 8px
+        color: $neutrals4
+
+        strong
+          color: $neutrals1
+
+    .buttonPurchase
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      width: 100%
+      margin-bottom: 32px
+      color: $neutrals4
+
+      img
+        margin-right: 10px
+
+      .button:not(:last-child)
+        margin-right: 24px
+        +m
+          width: 100%
+          margin-right: 0
+
+      .button
+        +m
+          width: 100%
+          margin-bottom: 24px
+
+  .property
+    padding: 0 24px
+    font-size: 14px
+    font-weight: 500
+    color: $neutrals4
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    +m
+      padding: 0 8px
+
+    &.payment
+      position: relative
+
+      .label
+        width: max-content
+        padding-right: 25px
+
+        span
+          border-radius: 50%
+          background: $neutrals7
+          display: block
+          width: max-content
+          padding: 15px
+
+      .methodName
+        color: $neutrals1
+        font-weight: 600
+        font-size: 16px
+        margin-bottom: 12px
+
+      img
+        width: 15px
+        height: 15px
+        margin-right: 12px
+
+      .value
+        width: 85%
+        flex-grow: 1
+
+        span
+          display: block
+          width: 100%
+          color: $neutrals3
+          font-size: 12px
+          margin-bottom: 12px
+
+      .select
+        position: absolute
+        right: 25px
+        top: 50%
+        transform: translateY(-50%)
+        border-radius: 50%
+        background: $white
+        border: 2px solid $neutrals4
+        width: 20px
+        height: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &.active
+          background: $orange-dark
+          border: none
+
+    &:last-child
+      border-right: none
+
+    .label
+      width: 20%
+      display: block
+      padding: 22px 0
+      border-bottom: 1px solid #ebebeb
+
+    .value
+      font-weight: 500
+      width: 80%
+      padding: 22px 0
+      border-bottom: 1px solid #ebebeb
+
+.icon
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 40px
+  height: 40px
+  margin-right: 6px
+  border-radius: 50%
+  flex-shrink: 0
+  +d
+    margin-right: 24px
+  +t
+    margin-right: 16px
+
+  &:before
+    content: ""
+    position: absolute
+    top: 3px
+    left: 3px
+    right: 3px
+    bottom: 3px
+    border-radius: 50%
+    background: $neutrals8
+    opacity: 0
+    transition: opacity .2s
+
+  svg
+    transition: opacity .2s
+
+    &:first-child
+      fill: $neutrals8
+
+    &:nth-child(2)
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      opacity: 0
+
+.arrow
+  position: absolute
+  top: 50%
+  right: 37px
+  transform: translateY(-50%)
+  opacity: 0
+  transition: opacity .2s
+  +d
+    right: 24px
+  +t
+    right: 0
+
+.bg
+  @include shineAnimation()
+
+  img
+    width: 100%
+    border-radius: 24px
+
+.title
+  margin-bottom: 36px
+  line-height: 56px
+  +m
+    text-align: center
+    font-size: 32px
+
+.text
+  margin-bottom: 24px
+  +caption-2
+  color: $neutrals4
+  +m
+    text-align: center
+
+  span
+    font-weight: 600
+    color: $neutrals2
+
+.box
+  margin-bottom: 24px
+  padding: 18%
+  background: $neutrals7
+  border-radius: 16px
+  +m
+    padding: 10%
+
+.code
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 29%
+  border-radius: 12px
+  border: 1px solid $neutrals6
+  background: $neutrals8
+  box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12) 5
+  +m
+    padding: 20%
+
+  img
+    width: 100%
+
+.preview
+  margin: 40px 0
+
+  img
+    width: 100%
+    border-radius: 12px
+
+.variants
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin-bottom: 40px
+
+.checkbox
+  &:not(:last-child)
+    margin-bottom: 12px
+
+.btns
+  display: flex
+  +m
+    display: block
+
+  .button
+    &:not(:last-child)
+      margin-right: 8px
+      +m
+        margin: 0 0 8px
+
+.container
+  +r(768)
+    padding: 0 32px
+
+.lightText
+  color: $green !important
+
+.block
+  .transaction
+    padding: 15px
+    border-bottom: 1px solid $neutrals6
+    font-size: 12px
+
+    strong
+      width: 20%
+      min-width: max-content
+      display: inline-block
+      margin-right: 5px
+
+  strong, .text
+    width: 20%
+
+  .head
+    margin-bottom: 10px
+    padding: 10px 15px
+    display: flex
+
+    label
+      width: 20%
+      font-size: 12px
+      color: $neutrals4
+
+      &:nth-child(2)
+        width: 60%
+
+  .body
+    flex-direction: column
+
+    .item
+      display: flex
+      width: 100%
+      border-bottom: 1px solid $neutrals6
+      padding: 15px
+
+      &:last-child
+        border-bottom: none
+
+      .text
+        width: 20%
+        margin-bottom: 0
+        font-size: 12px
+
+        &:nth-child(2)
+          width: 60%
+
+        span
+          color: $neutrals4
+          font-weight: normal
+
+    .textLink
+      margin-left: 5px
+
+.currency
+  margin: 16px 0
+
+  .iconExpand
+    margin-left: 10px
+
+  img
+    margin-right: 12px
+
+.textLink
+  color: $orange-dark
+
+.listCoin
+  height: 0px
+  overflow: hidden
+  transition: all .2s
+
+  &.expandListCoin
+    height: auto
+    overflow: initial
+
+.fundBlock
+  margin: 28px 0px !important
+  background: $white
+  padding: 24px
+
+  h3
+    font-size: 14px
+    color: $neutrals3
+
+  input
+    border: 2px solid $neutrals6
+    box-sizing: border-box
+    border-radius: 12px
+    padding: 0 16px
+    line-height: 40px
+    height: 40px
+    width: 100%
+    display: block
+    margin: 12px 0 16px
+
+  .warning
+    padding: 10px 24px
+    border-radius: 6px
+    font-weight: normal
+    font-size: 14px
+    display: flex
+    align-items: center
+    border: 1px solid $neutrals6
+    margin-bottom: 32px
+
+    img
+      margin-right: 35px
+
+    span
+      display: block
+      color: $neutrals4
+
+  .action
+    button
+      height: 48px !important
+      width: 240px
+      margin-bottom: 0 !important
+
+.steps
+  width: 75%
+  padding-left: 30px
+  +r(460)
+    width: 100%
+    margin-bottom: 32px
+    padding-left: 0
+
+  ul
+    display: flex
+    justify-content: space-between
+    padding: 0 24px
+
+  li
+    width: calc(100% / 2)
+
+    &.active
+      p
+        &:before,
+        &:after
+          background: $orange-dark
+
+        span
+          color: $neutrals1
+
+    &:first-child
+      width: 0
+
+      p:after
+        display: none
+
+      span
+        width: max-content
+        display: block
+        position: absolute
+        left: -8px
+
+    &:nth-child(2)
+      span
+        position: absolute
+        right: 0
+
+    p
+      display: flex
+      flex-wrap: wrap
+      position: relative
+      padding-top: 20px
+
+      &:before
+        content: ''
+        display: block
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        background: $neutrals4
+        position: absolute
+        right: 0
+        top: 0
+        z-index: 2
+
+      &:after
+        content: ''
+        display: block
+        width: 100%
+        height: 1px
+        background: $neutrals4
+        position: absolute
+        top: 4px
+        left: 0
+
+    span
+      width: 100%
+      color: $neutrals5
+      text-align: right
+
+h1.title
+  width: 25%
+
+.topHead
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  +r(460)
+    h1.title
+      width: 100%
+
+.iconExpand
+  cursor: pointer
+  padding: 10px
+
+  .rotate
+    svg
+      transform: rotate(180deg)
+
+.totalPrice
+  font-size: 24px
+  line-height: 32px
+  color: $neutrals1
+
+.input
+  width: 100%
+  height: 40px
+  line-height: 48px
+  padding: 0 16px
+  background: none
+  border: 2px solid $neutrals6
+  border-radius: 12px
+  +poppins
+  +caption-2
+  transition: border-color .2s
+  font-weight: normal
+  +placeholder
+    color: $neutrals4
+
+  &:focus
+    border-color: $orange-light

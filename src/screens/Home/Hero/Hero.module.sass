@@ -1,0 +1,420 @@
+@import ../../../styles/helpers
+@import ../../../styles/common
+.head
+  max-width: 600px
+  margin: 0 auto 128px
+  text-align: center
+  +x
+    margin-bottom: 112px
+  +m
+    margin-bottom: 64px
+.btn
+  width: 30px!important
+  height: 30px!important
+  border: 0!important
+  padding-right: 10px
+  padding-left: 8px
+  border-radius: 50px!important
+  margin-right: 40px!important
+  &:hover
+    border: 1px solid #ccc!important
+.stage
+  margin-bottom: 8px
+  +hairline-2
+  color: $neutrals8
+
+.title
+  margin-bottom: 24px
+  +m
+    font-size: 32px
+
+.wrapper
+  max-width: 1120px
+  position: relative
+  margin: 0 -12px
+
+.row
+  display: flex
+  align-items: center
+  justify-content: space-around
+  +m
+   flex-direction: column
+    
+
+.ContentsubtitleContainer
+  width: 100%
+
+
+.player
+  flex-grow: 1
+
+  .control
+    display: none
+
+  img
+    
+
+  +t
+    max-width: 768px
+    margin: 0 auto
+
+.details
+  flex-shrink: 0
+  width: 37%
+  margin-left: 5%
+
+  +m
+    margin-left: 0
+    width: 100%
+    padding-bottom: 40px
+
+.Contentsubtitle
+  display: flex;
+  justify-content: center
+  max-height: 590px
+
+.subtitle
+  margin-bottom: 20px
+  font-size: 40px
+  line-height: 55px
+  width: 100%
+  overflow: hidden
+  -webkit-box-orient: vertical
+  text-overflow: ellipsis
+  -webkit-line-clamp: 1
+  display: -webkit-box
+  -webkit-box-orient: vertical
+
+.line
+  display: flex
+  margin: 0 -16px 40px
+  +d
+    margin-bottom: 24px
+
+.item
+  display: flex
+  align-items: center
+  flex: 0 0 calc(50% - 32px)
+  width: calc(50% - 32px)
+  margin: 0 16px
+  margin-right: 45px
+
+.contaiNerSlider
+  display: flex
+  justify-content: space-between
+
+.avatar,
+.icon
+  flex-shrink: 0
+  width: 40px
+  height: 40px
+  margin-right: 8px
+
+.avatar
+  img
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    object-fit: cover
+
+.icon
+  display: flex
+  justify-content: center
+  align-items: center
+  background: $orange-dark
+  border-radius: 50%
+
+  svg
+    fill: $neutrals8
+
+.description
+  flex-grow: 1
+
+.category
+  +caption-2
+  color: $neutrals4
+
+.text
+  font-weight: 500
+  color: $neutrals2
+
+.wrap
+  margin-bottom: 12px
+  padding: 30px 16px
+  box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12)
+  border: 2px solid $neutrals6
+  border-radius: 24px
+  text-align: center
+  +d
+    padding: 24px 16px
+
+.info
+  +body-bold-2
+  color: $neutrals2
+
+.currency
+  +dm-sans
+  font-size: 48px
+  line-height: (56/48)
+  letter-spacing: -.02em
+  color: $neutrals1
+  font-weight: 700
+
+.currencyOther
+  font-size: 24px
+  color: $neutrals4
+  +d
+    font-size: 14px
+
+.price
+  margin-bottom: 24px
+  +body-bold-1
+  color: $purple-light
+
+.timer
+  display: flex
+  justify-content: center
+  margin-top: 10px
+
+.box
+  flex-shrink: 0
+  width: 64px
+
+  &:not(:last-child)
+    margin-right: 20px
+
+.number
+  +dm-sans
+  font-size: 32px
+  line-height: (40/32)
+  letter-spacing: -.01em
+  color: $neutrals1
+
+.time
+  +body-bold-2
+  color: $neutrals4
+
+.btns
+  display: flex
+  flex-direction: column
+
+  .button
+    width: 100%
+
+    &:not(:last-child)
+      margin-bottom: 8px
+
+.sliderContainer
+
+  .container
+    +r(1024)
+      padding: 0
+
+  .mySlides
+    max-height: 672px
+    overflow: hidden
+    position: relative
+
+    img
+      max-height: 368px
+      object-fit: cover
+      width: 100%
+
+  .head
+    position: absolute
+    margin: 0
+    top: 65%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 5
+    color: $white
+    +t
+      top: 50%
+      width: 75%
+      .title
+        font-size: 32px
+    +m
+      .title
+        font-size: 24px
+
+    > a
+      color: $white
+
+.thumbnail
+  max-height: 200pxpx
+  border-radius: 12px
+  margin: 0 8px
+  width: calc(100% - 22px) !important
+  cursor: pointer
+
+  img
+    object-fit: cover
+    width: 100%
+    border-radius: 12px
+
+.slideThumbnail
+  width: calc(100% - 506px)
+  padding: 20px 12px
+
+  .slick-list
+    width: 80%
+
+.hotBidSection
+  +r(1024)
+    padding-top: 100px
+  +m
+    padding-top: 64px
+
+.containerCard
+  display: flex
+
+  .cardStyles
+    margin: 50px
+    width: 100px
+    height: 70px
+.CONTAINER
+
+.cArdItem
+
+.VideoContent
+  width: 99px!important
+  height: 55px
+  border-radius: 12px!important
+
+.playerImgContainer
+  width: 554px
+  border-radius: 25px
+.thumbnailImgContainer
+  height: 0
+  border-radius: 10px
+
+.toastMes
+  background: #EF466F
+
+
+
+@media (min-width: 320px) and (max-width: 767px) 
+  .item
+    margin-right: 10px
+  .subtitle
+    font-size: 30px
+    margin: 2rem 0
+
+@media (min-width: 761px) and (max-width: 1023px) 
+  .subtitle
+    font-size: 35px
+    width: 260px
+  .item
+    margin-right: 15px
+
+@media (min-width: 1024px) and (max-width: 1366px) 
+  .subtitle
+    font-size: 35px
+    width: 320px
+  .item
+    margin-right: 30px
+
+@media (min-width: 768px) 
+  .row
+    max-height: 600px
+
+.detail
+  min-width: 37%
+  padding: 10px 0 0
+  z-index: 999 
+
+  .warning
+    padding: 24px
+    background: rgba(239, 70, 111, 0.08)
+    color: rgba(239, 70, 111, 1)
+    border-radius: 8px
+    margin-bottom: 25px
+    font-weight: normal
+    font-size: 12px
+    display: flex
+    align-items: center
+
+    img
+      margin-right: 15px
+
+    span
+      display: block
+
+  .qr
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .styleQR
+    margin-bottom: 20px
+
+  .field
+    display: flex
+    margin-bottom: 24px
+
+    .input
+      width: 100%
+      height: 48px
+      padding: 0 42px 0 16px
+      background: none
+      border: 1px solid $neutrals6
+      border-radius: 8px 0 0 8px
+      +poppins
+      +caption-2
+      transition: border-color .2s
+      font-weight: normal
+      color: $neutrals2
+      +placeholder
+        color: $neutrals4
+
+      &:focus
+        border-color: $orange-light
+
+    button
+      border: 1px solid $neutrals6
+      background: none
+      color: $neutrals2
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+      border-left: none
+      border-radius: 0 4px 4px 0
+
+  .note
+    span
+      color: $neutrals5
+      font-weight: normal
+      font-size: 12px
+      line-height: 16px
+
+
+.TitleDetail
+  font-size: 14px
+  font-weight: 600
+.SpnDetail
+  font-size: 14px
+  font-weight: 600
+  margin-top: -3px
+  padding-left: 4px
+.SpnDetailItem
+  display: flex
+
+
+.imgDeposit 
+  width: 30px
+  height: 30px
+
+
+@media  (max-width: 767px)
+  .contaiNerSlider
+    display: block
+  .Contentsubtitle
+    width: 100%
+  .wrap
+    margin-top: 45px
+
+@media  (min-width: 761px) and (max-width: 1024px)
+  .details
+    margin-left: 1%
+  
+

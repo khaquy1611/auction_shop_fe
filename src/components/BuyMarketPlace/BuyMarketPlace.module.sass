@@ -1,0 +1,47 @@
+@import ../../styles/helpers
+
+.title
+  margin-bottom: 32px
+
+.info
+  margin-bottom: 32px
+  font-weight: 500
+  +body-2
+
+.stage
+  margin-bottom: 16px
+  +body-bold-1
+
+.row
+  display: flex
+  padding-top: 12px
+
+  &:first-child
+    padding: 0 0 12px
+    border-bottom: 1px solid $neutrals6
+    font-weight: 500
+
+.col
+  +body-2
+
+  &:first-child
+    color: $neutrals4
+    font-weight: normal
+
+  &:nth-child(2)
+    margin-left: auto
+    padding-left: 16px
+    font-weight: 600
+
+.btns
+  margin-top: 32px
+
+.button
+  width: 100%
+
+  &:not(:last-child)
+    margin-bottom: 8px
+.disabled
+  background-color: #cc6a00
+  cursor: default
+

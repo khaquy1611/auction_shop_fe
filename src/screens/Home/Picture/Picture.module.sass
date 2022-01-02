@@ -1,0 +1,108 @@
+@import ../../../styles/helpers
+
+.section
+  position: relative
+  display: flex
+  align-items: center
+  padding: 200px 0
+  border-top: 1px solid $neutrals6
+  +w
+    padding-left: 80px
+    padding-right: 80px
+  +d
+    min-height: 576px
+  +m
+    display: block
+    min-height: auto
+    padding: 64px 0
+    text-align: center
+
+.container
+  padding: 0
+  max-width: 1400px
+  +m
+    padding: 0 32px
+
+.wrap
+  position: relative
+  z-index: 3
+  max-width: 55%
+  +d
+    max-width: 50%
+  +m
+    max-width: 100%
+    margin-bottom: 40px
+
+.stage
+  margin-bottom: 15px
+  color: $neutrals4
+
+.title
+  margin-bottom: 20px
+  color: $neutrals2
+  font-size: 40px
+  +m
+    font-size: 28px
+
+.text
+  margin-bottom: 40px
+  +body-2
+  font-weight: normal
+  color: $neutrals4
+
+.btns
+  display: flex
+  +m
+    display: block
+
+.button
+  background: $orange-dark
+  padding: 16px 48px
+  +m
+    width: 100%
+
+  &:not(:last-child)
+    margin-right: 16px
+    +m
+      margin: 0 0 16px
+
+.gallery
+  position: absolute
+  top: 50%
+  left: calc(52.5% + 40px)
+  width: 40%
+  border-radius: 50%
+  transform: translateY(-50%)
+  pointer-events: none
+  +m
+    position: static
+    transform: translateY(0)
+    margin: 0 auto
+  +s
+    width: auto
+
+.preview
+  &:first-child
+    position: relative
+    z-index: 2
+
+  &:nth-child(2)
+    right: -11%
+    bottom: -3.5%
+    z-index: 3
+    width: 47%
+
+  &:not(:first-child)
+    position: absolute
+
+  img
+    width: 100%
+    object-fit: cover
+    max-width: 450px
+    margin: 0 auto
+    display: block
+
+
+@media  (max-width: 767px)
+  .title
+    font-size: 30px

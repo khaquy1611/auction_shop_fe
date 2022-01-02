@@ -1,0 +1,51 @@
+@import ../../../styles/helpers
+
+.block
+    .transaction
+        padding: 16px 24px
+        border: 1px solid $neutrals6
+        font-size: 12px
+        
+        strong
+            width: 20%
+            min-width: max-content
+            display: inline-block
+            
+
+    .contentTransaction
+        border: 1px solid $neutrals6
+        width: 100%
+        
+
+    table 
+        table-layout: fixed
+        width: 100%
+
+    tr
+        border-bottom: 1px solid $neutrals6
+
+    th, td 
+        padding: 16px 24px
+        text-align: left
+        font-weight: normal
+        color: $neutrals4
+    td 
+        color: $neutrals2
+        
+    .hash
+        overflow: hidden
+        text-overflow: ellipsis
+        -webkit-box-orient: vertical
+        -webkit-line-clamp: 1
+        white-space: nowrap
+        display: -webkit-box
+    .amount 
+        text-align: right
+        
+    .rowNoTransaction
+        border: none
+
+    .noTransaction
+        text-align: center
+
+

@@ -1,0 +1,41 @@
+@import ../../../styles/helpers
+
+.options
+  display: inline-flex
+  padding: 8px
+  border-radius: 32px
+  background: $neutrals8
+  margin: 15px 0 20px
+  +m
+    width: 100%
+    padding-left: 0
+    padding-right: 0
+    justify-content: space-between
+
+.button
+  &:not(:last-child)
+    margin-right: 24px
+
+.favorite
+  svg
+    fill: $pink
+
+  &:hover
+    svg
+      fill: $pink
+
+.btnItem
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  margin-right: 50px
+
+  &:last-child
+    margin-right: 0
+
+  +m
+    margin-right: 10px
+
+  span
+    margin-right: 10px
+    color: $neutrals3
